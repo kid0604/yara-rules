@@ -3,6 +3,7 @@
 This repo crawls yara rules from multiple sources, cleans them, and adds some metadata using LLM.
 
 **Yara rules sources:**
+
 https://github.com/embee-research/Yara-detection-rules.git
 
 https://github.com/FarghlyMal/Yara_Rules.git
