@@ -1,6 +1,6 @@
 # yara-rules
 
-This repo crawls yara rules from multiple sources, cleans them, and adds some metadata using LLM.
+Crawling yara rules from multiple sources, cleans them, and adds some metadata using LLM.
 
 **Yara rules sources:**
 
