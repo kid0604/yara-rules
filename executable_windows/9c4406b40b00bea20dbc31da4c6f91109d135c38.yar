@@ -1,0 +1,31 @@
+rule APT_HKTL_Wiper_WhisperGate_Jan22_2
+{
+	meta:
+		description = "Detects unknown wiper malware"
+		author = "Florian Roth (Nextron Systems)"
+		reference = "https://www.microsoft.com/security/blog/2022/01/15/destructive-malware-targeting-ukrainian-organizations/"
+		date = "2022-01-16"
+		score = 90
+		hash1 = "dcbbae5a1c61dbbbb7dcd6dc5dd1eb1169f5329958d38b58c3fd9384081c9b78"
+		os = "windows"
+		filetype = "executable"
+
+	strings:
+		$sc1 = { 70 00 6F 00 77 00 65 00 72 00 73 00 68 00 65 00
+               6C 00 6C 00 00 27 2D 00 65 00 6E 00 63 00 20 00
+               55 00 77 00 42 00 30 00 41 00 47 00 45 00 41 00
+               63 00 67 00 42 00 30 00 41 00 43 }
+		$sc2 = { 59 00 6C 00 66 00 77 00 64 00 77 00 67 00 6D 00
+               70 00 69 00 6C 00 7A 00 79 00 61 00 70 00 68 }
+		$s1 = "xownxloxadDxatxxax" wide
+		$s2 = "0AUwBsAGUAZQBwACAALQBzACAAMQAwAA==" wide
+		$s3 = "https://cdn.discordapp.com/attachments/" wide
+		$s4 = "fffxfff.fff" ascii fullword
+		$op1 = { 20 6b 85 b9 03 20 14 19 91 52 61 65 20 e1 ae f1 }
+		$op2 = { aa ae 74 20 d9 7c 71 04 59 20 71 cc 13 91 61 20 97 3c 2a c0 }
+		$op3 = { 38 9c f3 ff ff 20 f2 96 4d e9 20 5d ae d9 ce 58 20 4f 45 27 }
+		$op4 = { d4 67 d4 61 80 1c 00 00 04 38 35 02 00 00 20 27 c0 db 56 65 20 3d eb 24 de 61 }
+
+	condition:
+		uint16(0)==0x5a4d and filesize <1000KB and 5 of them or 7 of them
+}

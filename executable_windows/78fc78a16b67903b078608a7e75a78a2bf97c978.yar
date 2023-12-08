@@ -1,0 +1,33 @@
+import "pe"
+
+rule HKTL_NET_GUID_Random_CSharpTools_alt_1
+{
+	meta:
+		description = "Detects c# red/black-team tools via typelibguid"
+		reference = "https://github.com/xorrior/Random-CSharpTools"
+		license = "Detection Rule License 1.1 https://github.com/Neo23x0/signature-base/blob/master/LICENSE"
+		author = "Arnim Rupp (https://github.com/ruppde)"
+		date = "2020-12-21"
+		modified = "2023-04-06"
+		os = "windows"
+		filetype = "executable"
+
+	strings:
+		$typelibguid0lo = "f7fc19da-67a3-437d-b3b0-2a257f77a00b" ascii wide
+		$typelibguid0up = "F7FC19DA-67A3-437D-B3B0-2A257F77A00B" ascii wide
+		$typelibguid1lo = "47e85bb6-9138-4374-8092-0aeb301fe64b" ascii wide
+		$typelibguid1up = "47E85BB6-9138-4374-8092-0AEB301FE64B" ascii wide
+		$typelibguid2lo = "c7d854d8-4e3a-43a6-872f-e0710e5943f7" ascii wide
+		$typelibguid2up = "C7D854D8-4E3A-43A6-872F-E0710E5943F7" ascii wide
+		$typelibguid3lo = "d6685430-8d8d-4e2e-b202-de14efa25211" ascii wide
+		$typelibguid3up = "D6685430-8D8D-4E2E-B202-DE14EFA25211" ascii wide
+		$typelibguid4lo = "1df925fc-9a89-4170-b763-1c735430b7d0" ascii wide
+		$typelibguid4up = "1DF925FC-9A89-4170-B763-1C735430B7D0" ascii wide
+		$typelibguid5lo = "817cc61b-8471-4c1e-b5d6-c754fc550a03" ascii wide
+		$typelibguid5up = "817CC61B-8471-4C1E-B5D6-C754FC550A03" ascii wide
+		$typelibguid6lo = "60116613-c74e-41b9-b80e-35e02f25891e" ascii wide
+		$typelibguid6up = "60116613-C74E-41B9-B80E-35E02F25891E" ascii wide
+
+	condition:
+		( uint16(0)==0x5A4D and uint32( uint32(0x3C))==0x00004550) and any of them
+}
