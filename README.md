@@ -4,6 +4,8 @@ Crawling yara rules from multiple sources, cleans them, and adds some metadata u
 
 **Rule Stats:**
 
+Date: 2023-12-18
+
 executable_macos: 97
 
 executable_linux: 863
