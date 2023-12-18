@@ -2,6 +2,18 @@
 
 Crawling yara rules from multiple sources, cleans them, and adds some metadata using LLM.
 
+**Rule Stats:**
+
+executable_macos: 97
+
+executable_linux: 863
+
+document: 204
+
+executable_windows: 10481
+
+script: 1660
+
 **Yara rules sources:**
 
 https://github.com/embee-research/Yara-detection-rules.git
