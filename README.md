@@ -10,9 +10,9 @@ executable_macos: 97
 
 executable_linux: 863
 
-document: 204
+document: 208 (+4)
 
-executable_windows: 10481
+executable_windows: 10485 (+4)
 
 script: 1660
 
