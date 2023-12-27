@@ -14,7 +14,7 @@ Crawling yara rules from multiple sources, cleans them, and adds some metadata u
 - dependent on other rules or use external variables,
 - obsoleted rules, such as PEiD, etc.
 
-**enrich:** use LLMs to add additional metadata such as OS, filetype, description.
+**enrich:** use LLMs to add additional metadata such as OS, filetype, description...
 
 ## Yara rules sources:
 
