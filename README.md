@@ -2,11 +2,11 @@
 
 Crawling yara rules from multiple sources, cleans them, and adds some metadata using LLM.
 
-**Pipeline:**
+## Pipeline:
 
-crawl --> clean --> enrich
+***crawl --> clean --> enrich***
 
-**crawl:** get rules from various sources on github
+**crawl:** get rules from multiple sources on github
 
 **clean:** remove rules that are:
 - syntactically incorrect,
@@ -16,7 +16,7 @@ crawl --> clean --> enrich
 
 **enrich:** use LLMs to add additional metadata such as OS, filetype, description.
 
-**Yara rules sources:**
+## Yara rules sources:
 
 https://github.com/embee-research/Yara-detection-rules.git
 
