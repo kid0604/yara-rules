@@ -12,7 +12,7 @@ executable_linux: 863
 
 document: 209 (+1)
 
-executable_windows: 10485 (+28)
+executable_windows: 10537 (+80)
 
 script: 1666 (+6)
 
