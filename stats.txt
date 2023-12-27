@@ -1,0 +1,5 @@
+document: 209
+script: 1666
+executable_linux: 863
+executable_macos: 97
+executable_windows: 10537
