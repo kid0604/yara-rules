@@ -4,17 +4,17 @@ Crawling yara rules from multiple sources, cleans them, and adds some metadata u
 
 **Rule Stats:**
 
-Date: 2023-12-18
+Date: 2023-12-27
 
 executable_macos: 97
 
 executable_linux: 863
 
-document: 208 (+4)
+document: 209 (+1)
 
-executable_windows: 10485 (+4)
+executable_windows: 10485 (+28)
 
-script: 1660
+script: 1666 (+6)
 
 **Yara rules sources:**
 
@@ -47,3 +47,7 @@ https://github.com/Yara-Rules/rules.git
 https://github.com/m-sec-org/d-eyes.git
 
 https://github.com/ditekshen/detection.git
+
+https://github.com/securitymagic/yara.git
+
+https://github.com/RussianPanda95/Yara-Rules.git

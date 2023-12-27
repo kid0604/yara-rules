@@ -1,0 +1,19 @@
+rule Solarmarker_Packer_May_2023
+{
+	meta:
+		author = "Lucas Acha (http://www.lukeacha.com)"
+		description = "another version showing observed possible packer in hexdump at specific offset ranges."
+		reference = "http://security5magics.blogspot.com/2020/12/tracking-jupyter-malware.html"
+		os = "windows"
+		filetype = "executable"
+
+	strings:
+		$mz = "MZ"
+		$off1 = { 41 1? ?? 00 ?? 00 61 1? ?? 00 }
+		$off2 = { 41 0? 23 00 ?? 00 61 0? 23 00 }
+		$astring1 = "IDisposable" ascii
+		$wstring1 = "0.0.0.0" wide
+
+	condition:
+		($off1 in (0x80000..0x9FFFF) or $off2 in (0x72000..0x9FFFF)) and $astring1 and $wstring1 and $mz at 0 and filesize <1MB
+}
