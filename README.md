@@ -2,19 +2,19 @@
 
 Crawling yara rules from multiple sources, cleans them, and adds some metadata using LLM.
 
-**Rule Stats:**
+**Pipeline:**
 
-Date: 2023-12-27
+crawl --> clean --> enrich
 
-executable_macos: 97
+**crawl:** get rules from various sources on github
 
-executable_linux: 863
+**clean:** remove rules that are:
+- syntactically incorrect,
+- duplicates,
+- dependent on other rules or use external variables,
+- obsoleted rules, such as PEiD, etc.
 
-document: 209 (+1)
-
-executable_windows: 10537 (+80)
-
-script: 1666 (+6)
+**enrich:** use LLMs to add additional metadata such as OS, filetype, description.
 
 **Yara rules sources:**
 
