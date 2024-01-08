@@ -2,4 +2,4 @@ document: 213
 script: 1710
 executable_linux: 871
 executable_macos: 99
-executable_windows: 10638
+executable_windows: 10640
