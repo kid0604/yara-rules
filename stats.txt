@@ -3,3 +3,4 @@ script: 1740
 executable_linux: 924
 executable_macos: 101
 executable_windows: 10868
+compressed: 0
