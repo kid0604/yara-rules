@@ -13,7 +13,7 @@ rule Windows_Trojan_WikiLoader_c57f3f88
 		scan_context = "file, memory"
 		license = "Elastic License v2"
 		os = "windows"
-		description = "Windows Trojan WikiLoader"
+		description = "Detects Windows Trojan WikiLoader"
 		filetype = "executable"
 
 	strings:

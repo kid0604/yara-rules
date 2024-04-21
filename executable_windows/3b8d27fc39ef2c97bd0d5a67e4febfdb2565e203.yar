@@ -13,7 +13,7 @@ rule Windows_Trojan_Generic_40899c85
 		scan_context = "file, memory"
 		license = "Elastic License v2"
 		os = "windows"
-		description = "Detects Windows Trojan Generic"
+		description = "Detects Windows Trojan Generic based on specific strings"
 		filetype = "executable"
 
 	strings:

@@ -1,6 +1,6 @@
 import "pe"
 
-rule SolarMarker_loader_alt_1
+rule SolarMarker_loader
 {
 	meta:
 		author = "RussianPanda"

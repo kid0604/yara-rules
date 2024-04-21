@@ -3,10 +3,10 @@ import "pe"
 rule SUSP_AnyDesk_Compromised_Certificate_Jan24_3
 {
 	meta:
-		description = "Detects binaries signed with a potentially compromised signing certificate of AnyDesk after it was revoked (philandro Software GmbH, 0DBF152DEAF0B981A8A938D53F769DB8; version that uses dates for validation)"
+		description = "Detects binaries signed with a compromised signing certificate of AnyDesk after it was revoked (philandro Software GmbH, 0DBF152DEAF0B981A8A938D53F769DB8; version that uses dates for validation)"
 		date = "2024-02-02"
 		author = "Florian Roth"
-		reference = "https://download.anydesk.com/changelog.txt"
+		reference = "https://anydesk.com/en/public-statement"
 		score = 75
 		os = "windows"
 		filetype = "executable"

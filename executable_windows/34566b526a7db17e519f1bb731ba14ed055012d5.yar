@@ -12,7 +12,7 @@ rule Windows_Trojan_Donutloader_f40e3759_alt_2
 		scan_context = "file, memory"
 		license = "Elastic License v2"
 		os = "windows"
-		description = "Detects Windows Trojan Donutloader variant f40e3759_alt_2"
+		description = "Detects Windows Trojan Donutloader variant f40e3759"
 		filetype = "executable"
 
 	strings:

@@ -13,7 +13,7 @@ rule Linux_Ransomware_Erebus_ead4f55b
 		scan_context = "file, memory"
 		license = "Elastic License v2"
 		os = "linux"
-		description = "Detects Linux.Ransomware.Erebus ransomware"
+		description = "Detects the presence of Linux.Ransomware.Erebus"
 		filetype = "executable"
 
 	strings:

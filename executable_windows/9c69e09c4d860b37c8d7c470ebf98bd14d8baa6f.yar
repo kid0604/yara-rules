@@ -1,4 +1,4 @@
-rule neptune_loader_alt_1
+rule neptune_loader
 {
 	meta:
 		description = "Detects Neptune Loader"

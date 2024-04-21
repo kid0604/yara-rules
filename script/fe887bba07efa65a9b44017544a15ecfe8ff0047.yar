@@ -4,7 +4,7 @@ rule webshell_DSLog_str
 		description = "Ivanti Connect Secure infected DSLog.pm backdoor"
 		author = "JPCERT/CC Incident Response Group"
 		hash = "88071ac4500021da896d0a92c935dcb9ca5c2dfe02caa0ee1b924d8b72ae404e"
-		os = "windows,linux,macos,ios,android"
+		os = "windows,linux,macos"
 		filetype = "script"
 
 	strings:

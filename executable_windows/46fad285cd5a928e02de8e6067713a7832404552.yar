@@ -13,7 +13,7 @@ rule Windows_Trojan_HijackLoader_a8444812
 		scan_context = "file, memory"
 		license = "Elastic License v2"
 		os = "windows"
-		description = "Detects Windows Trojan HijackLoader"
+		description = "Detects the presence of Windows Trojan HijackLoader"
 		filetype = "executable"
 
 	strings:

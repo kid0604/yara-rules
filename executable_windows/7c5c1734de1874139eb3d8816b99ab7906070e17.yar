@@ -1,4 +1,4 @@
-rule ZharkBot_alt_1
+rule ZharkBot
 {
 	meta:
 		description = "Detects ZharkBot"

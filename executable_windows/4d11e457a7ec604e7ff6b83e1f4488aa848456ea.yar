@@ -13,7 +13,7 @@ rule Windows_Generic_Threat_97c1a260
 		scan_context = "file, memory"
 		license = "Elastic License v2"
 		os = "windows"
-		description = "Detects Windows generic threat"
+		description = "Detects Windows generic threat based on specific fingerprint"
 		filetype = "executable"
 
 	strings:

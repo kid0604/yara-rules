@@ -3,7 +3,7 @@ rule tick_xxmm_panel
 	meta:
 		description = "xxmm php panel"
 		author = "JPCERT/CC Incident Response Group"
-		os = "windows,linux,macos"
+		os = "windows,linux,macos,ios,android"
 		filetype = "script"
 
 	strings:

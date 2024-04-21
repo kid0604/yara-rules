@@ -13,7 +13,7 @@ rule Windows_Trojan_Metasploit_47f5d54a
 		scan_context = "file, memory"
 		license = "Elastic License v2"
 		os = "windows"
-		description = "Detects Windows Trojan Metasploit"
+		description = "Detects Windows Trojan Metasploit with specific fingerprint"
 		filetype = "executable"
 
 	strings:

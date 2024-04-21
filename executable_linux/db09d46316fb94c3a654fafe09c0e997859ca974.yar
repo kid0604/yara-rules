@@ -13,7 +13,7 @@ rule Linux_Ransomware_EchoRaix_ea9532df
 		scan_context = "file, memory"
 		license = "Elastic License v2"
 		os = "linux"
-		description = "Detects Linux.Ransomware.EchoRaix malware"
+		description = "Detects Linux.Ransomware.EchoRaix"
 		filetype = "executable"
 
 	strings:

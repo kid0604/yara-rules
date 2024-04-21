@@ -7,13 +7,14 @@ rule Windows_Trojan_PikaBot_5b220e9c
 		creation_date = "2024-02-06"
 		last_modified = "2024-02-08"
 		threat_name = "Windows.Trojan.PikaBot"
+		reference = "https://www.elastic.co/security-labs/pikabot-i-choose-you"
 		reference_sample = "d836b06b0118e6d258e318b1cfdc509cacc0859c6a6b3d7c5f4d2525e00d97b2"
 		severity = 100
 		arch_context = "x86"
 		scan_context = "file, memory"
 		license = "Elastic License v2"
 		os = "windows"
-		description = "Detects the presence of Windows Trojan PikaBot"
+		description = "Detects Windows Trojan PikaBot"
 		filetype = "executable"
 
 	strings:

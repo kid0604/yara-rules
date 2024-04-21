@@ -13,7 +13,7 @@ rule Windows_Trojan_Afdk_5f8cc135
 		scan_context = "file, memory"
 		license = "Elastic License v2"
 		os = "windows"
-		description = "Detects Windows Trojan Afdk"
+		description = "Detects the presence of Windows Trojan Afdk"
 		filetype = "executable"
 
 	strings:
