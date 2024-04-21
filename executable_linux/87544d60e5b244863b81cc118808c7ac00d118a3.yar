@@ -13,7 +13,7 @@ rule Linux_Ransomware_LimpDemon_95c748e0
 		scan_context = "file, memory"
 		license = "Elastic License v2"
 		os = "linux"
-		description = "Detects the presence of Linux.Ransomware.LimpDemon"
+		description = "Detects Linux.Ransomware.LimpDemon ransomware activity"
 		filetype = "executable"
 
 	strings:

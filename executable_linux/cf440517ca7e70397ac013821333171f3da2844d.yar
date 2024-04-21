@@ -13,7 +13,7 @@ rule Linux_Ransomware_RoyalPest_502a3db6
 		scan_context = "file, memory"
 		license = "Elastic License v2"
 		os = "linux"
-		description = "Detects Linux.Ransomware.RoyalPest ransomware activity"
+		description = "Detects Linux.Ransomware.RoyalPest variant 502a3db6"
 		filetype = "executable"
 
 	strings:

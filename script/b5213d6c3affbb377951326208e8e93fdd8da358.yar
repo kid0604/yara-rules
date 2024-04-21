@@ -1,4 +1,4 @@
-rule obfuscation_powershell_special_chars_alt_1
+rule obfuscation_powershell_special_chars
 {
 	meta:
 		author = "RussianPanda"

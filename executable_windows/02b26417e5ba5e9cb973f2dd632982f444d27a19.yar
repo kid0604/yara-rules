@@ -7,13 +7,14 @@ rule Windows_Trojan_AgentTesla_ebf431a8
 		creation_date = "2023-12-01"
 		last_modified = "2024-01-12"
 		threat_name = "Windows.Trojan.AgentTesla"
+		reference = "https://www.elastic.co/security-labs/attack-chain-leads-to-xworm-and-agenttesla"
 		reference_sample = "0cb3051a80a0515ce715b71fdf64abebfb8c71b9814903cb9abcf16c0403f62b"
 		severity = 100
 		arch_context = "x86"
 		scan_context = "file, memory"
 		license = "Elastic License v2"
 		os = "windows"
-		description = "Detects Windows Trojan AgentTesla variant with specific strings"
+		description = "Detects Windows Trojan AgentTesla variant ebf431a8"
 		filetype = "executable"
 
 	strings:

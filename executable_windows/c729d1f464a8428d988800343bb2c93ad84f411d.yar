@@ -1,5 +1,5 @@
-import "time"
 import "pe"
+import "time"
 
 rule INDICATOR_SUSPICIOUS_EXE_SandboxUserNames_alt_2
 {

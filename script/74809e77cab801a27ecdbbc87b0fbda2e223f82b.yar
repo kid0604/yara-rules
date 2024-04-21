@@ -4,7 +4,7 @@ rule webshell_FoxWSO_str
 		description = "Webshell FoxWSO"
 		author = "JPCERT/CC Incident Response Group"
 		hash = "5ab2258d38805007226166f946bcc2794310bd9889f03fcb1894f2061716b0f9"
-		os = "windows,linux,macos,ios,android"
+		os = "windows,linux,macos"
 		filetype = "script"
 
 	strings:

@@ -1,5 +1,5 @@
-import "time"
 import "pe"
+import "time"
 
 rule INDICATOR_SUSPICIOUS_Binary_Embedded_Crypto_Wallet_Browser_Extension_IDs_alt_3
 {

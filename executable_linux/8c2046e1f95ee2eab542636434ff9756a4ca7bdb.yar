@@ -13,7 +13,7 @@ rule Linux_Generic_Threat_2e214a04
 		scan_context = "file, memory"
 		license = "Elastic License v2"
 		os = "linux"
-		description = "Detects a generic threat on Linux systems"
+		description = "Detects Linux generic threat"
 		filetype = "executable"
 
 	strings:

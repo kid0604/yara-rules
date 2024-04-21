@@ -8,7 +8,7 @@ rule SUSP_Command_Line_Combos_Feb24_2 : SCRIPT
 		reference = "https://www.huntress.com/blog/slashandgrab-screen-connect-post-exploitation-in-the-wild-cve-2024-1709-cve-2024-1708"
 		date = "2024-02-23"
 		score = 75
-		os = "windows,linux,macos,ios,android"
+		os = "windows,linux,macos"
 		filetype = "script"
 
 	strings:

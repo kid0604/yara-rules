@@ -1,4 +1,4 @@
-rule Atomic_Stealer_alt_1
+rule Atomic_Stealer
 {
 	meta:
 		author = "RussianPanda"

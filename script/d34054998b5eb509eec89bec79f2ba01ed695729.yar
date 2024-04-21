@@ -7,7 +7,7 @@ rule M_Hunting_Dropper_WIREFIRE_1
 		reference = "https://www.mandiant.com/resources/blog/suspected-apt-targets-ivanti-zero-day"
 		date = "2024-01-11"
 		score = 75
-		os = "windows,linux"
+		os = "windows,linux,macos"
 		filetype = "script"
 
 	strings:

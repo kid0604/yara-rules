@@ -13,7 +13,7 @@ rule Windows_Trojan_RedLineStealer_6dfafd7b
 		scan_context = "file, memory"
 		license = "Elastic License v2"
 		os = "windows"
-		description = "Detects Windows Trojan RedLineStealer"
+		description = "Detects Windows Trojan RedLineStealer variant 6dfafd7b"
 		filetype = "executable"
 
 	strings:

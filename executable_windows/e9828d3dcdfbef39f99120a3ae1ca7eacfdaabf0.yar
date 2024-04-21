@@ -1,6 +1,6 @@
 import "dotnet"
 
-rule PureCrypter
+rule PureCrypter_alt_1
 {
 	meta:
 		author = "RussianPanda"

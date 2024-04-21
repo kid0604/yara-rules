@@ -1,4 +1,4 @@
-rule SmartApeSG_JS_NetSupportRAT_stage2_alt_1
+rule SmartApeSG_JS_NetSupportRAT_stage2
 {
 	meta:
 		author = "RussianPanda"

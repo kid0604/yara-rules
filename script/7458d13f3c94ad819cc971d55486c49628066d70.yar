@@ -13,7 +13,7 @@ rule Linux_Ransomware_BlackSuit_9f53e7e5
 		scan_context = "file, memory"
 		license = "Elastic License v2"
 		os = "linux"
-		description = "Detects Linux.Ransomware.BlackSuit ransomware activity"
+		description = "Detects the presence of Linux.Ransomware.BlackSuit"
 		filetype = "script"
 
 	strings:

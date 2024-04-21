@@ -7,13 +7,14 @@ rule Windows_Trojan_GhostPulse_3673d337
 		creation_date = "2023-12-11"
 		last_modified = "2024-01-12"
 		threat_name = "Windows.Trojan.GhostPulse"
+		reference = "https://www.elastic.co/security-labs/ghostpulse-haunts-victims-using-defense-evasion-bag-o-tricks"
 		reference_sample = "3013ba32838f6d97d7d75e25394f9611b1c5def94d93588f0a05c90b25b7d6d5"
 		severity = 100
 		arch_context = "x86"
 		scan_context = "file, memory"
 		license = "Elastic License v2"
 		os = "windows"
-		description = "Detects Windows Trojan GhostPulse (3673d337) in file or memory"
+		description = "Detects Windows Trojan GhostPulse (3673d337)"
 		filetype = "executable"
 
 	strings:

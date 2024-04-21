@@ -4,7 +4,7 @@ rule Lazarus_httpbot_jsessid
 		description = "Unknown HTTP bot in Lazarus"
 		author = "JPCERT/CC Incident Response Group"
 		hash1 = "451ad26a41a8b8ae82ccfc850d67b12289693b227a7114121888b444d72d4727"
-		os = "windows,linux,macos,ios,android"
+		os = "windows,linux,macos"
 		filetype = "script"
 
 	strings:

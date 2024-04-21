@@ -6,7 +6,7 @@ rule APT_UNC5221_Ivanti_ForensicArtifacts_Jan24_1
 		reference = "https://www.mandiant.com/resources/blog/suspected-apt-targets-ivanti-zero-day"
 		date = "2024-01-11"
 		score = 75
-		os = "windows,linux,macos,ios,android"
+		os = "windows,linux,macos"
 		filetype = "script"
 
 	strings:

@@ -5,7 +5,7 @@ rule check_installed_software
 		date = "1/14/2024"
 		reference = "https://unprotect.it/technique/checking-installed-software/"
 		hash = "db44d4cd1ea8142790a6b26880b41ee23de5db5c2a63afb9ee54585882f1aa07"
-		description = "Check installed software by querying Windows registry for DisplayVersion"
+		description = "Check installed software by looking at the Windows registry"
 		os = "windows"
 		filetype = "executable"
 

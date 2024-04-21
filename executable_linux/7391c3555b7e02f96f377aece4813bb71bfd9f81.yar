@@ -13,7 +13,7 @@ rule Linux_Ransomware_Clop_728cf32a
 		scan_context = "file, memory"
 		license = "Elastic License v2"
 		os = "linux"
-		description = "Detects Linux.Ransomware.Clop ransomware"
+		description = "Detects Linux Ransomware Clop"
 		filetype = "executable"
 
 	strings:
