@@ -2,10 +2,5 @@ document: 216
 script: 1752
 executable_linux: 925
 executable_macos: 101
-<<<<<<< HEAD
-executable_windows: 10868
-compressed: 0
-=======
 executable_windows: 10913
 compressed: 1
->>>>>>> b2384a47e7111df24d1cf36ffb28c365875e548a
