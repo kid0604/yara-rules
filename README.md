@@ -53,3 +53,5 @@ https://github.com/securitymagic/yara.git
 https://github.com/RussianPanda95/Yara-Rules.git
 
 https://github.com/JPCERTCC/jpcert-yara.git
+
+https://github.com/The-DFIR-Report/Yara-Rules.git
