@@ -1,6 +1,6 @@
 document: 221
-script: 1800
+script: 1801
 executable_linux: 925
 executable_macos: 102
-executable_windows: 10994
+executable_windows: 11014
 compressed: 2
