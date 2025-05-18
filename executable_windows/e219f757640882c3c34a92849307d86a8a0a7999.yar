@@ -1,0 +1,21 @@
+rule MAL_Driver_773B
+{
+	meta:
+		description = "Detects malicious driver mentioned in LOLDrivers project using VersionInfo values from the PE header - mimidrv.sys"
+		author = "Florian Roth"
+		reference = "https://github.com/magicsword-io/LOLDrivers"
+		hash = "773b4a1efb9932dd5116c93d06681990759343dfe13c0858d09245bc610d5894"
+		date = "2024-08-07"
+		score = 70
+		id = "f47ab2f1-86f6-5550-939e-4477ec1c367c"
+		os = "windows"
+		filetype = "executable"
+
+	strings:
+		$ = { 00460069006c006500560065007200730069006f006e[1-8]0032002e0031002e0031002e0030 }
+		$ = { 00500072006f006400750063007400560065007200730069006f006e[1-8]0032002e0031002e0031002e0030 }
+		$ = { 004c006500670061006c0043006f0070007900720069006700680074[1-8]0043006f00700079007200690067006800740020002800630029002000320030003000370020002d002000320030003100370020 }
+
+	condition:
+		all of them
+}
